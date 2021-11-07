@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -78,7 +78,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -111,7 +111,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -145,7 +145,7 @@ jobs:
     needs: [docker-build-and-publish-web, docker-build-and-publish-prometheus, docker-build-and-publish-nginx, docker-build-and-publish-grafana]
     steps:
       -
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       -
         name: Login to DockerHub
         uses: docker/login-action@v1
