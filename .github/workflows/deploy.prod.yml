@@ -40,8 +40,6 @@ jobs:
           cache-to: type=inline
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest,${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.sha }}
 
-
-
   docker-build-and-publish-prometheus:
     name: docker-build-and-publish-prometheus
     runs-on: ubuntu-latest
@@ -75,13 +73,6 @@ jobs:
           cache-to: type=inline
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-prometheus:latest,${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-prometheus:${{ github.sha }}
 
-
-
-
-
-
-
-
   docker-build-and-publish-grafana:
     name: docker-build-and-publish-grafana
     runs-on: ubuntu-latest
@@ -114,10 +105,6 @@ jobs:
           cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-grafana:latest
           cache-to: type=inline
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-grafana:latest,${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-grafana:${{ github.sha }}
-
-
-
-
 
   docker-build-and-publish-nginx:
     name: docker-build-and-publish-nginx
