@@ -56,7 +56,8 @@ jobs:
           ssh_public_key: ${{ secrets.DOCKER_SSH_PUBLIC_KEY }}
           deployment_mode: docker-compose
           copy_stack_file: true
+          pull_images_first: true
           deploy_path: /root/app
           stack_file_name: docker-compose.prod.yml
           keep_files: 5
-          args: --no-deps up -d web
+          args: up -d
