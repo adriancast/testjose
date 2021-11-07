@@ -149,5 +149,5 @@ INSTALLED_APPS = ['admin_interface', 'colorfield'] + INSTALLED_APPS
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-print('test')
+print('Hola jose')
 
