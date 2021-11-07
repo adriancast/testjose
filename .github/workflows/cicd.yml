@@ -51,4 +51,5 @@ jobs:
           deploy_path: /opt/app
           stack_file_name: docker-compose.prod.yml
           docker_prune: true
+          args: web
       
