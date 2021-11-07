@@ -83,7 +83,7 @@ jobs:
           cache-to: type=inline
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-nginx:latest,${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-nginx:${{ github.sha }}
   deploy:
-    name: docker-compose-deploy
+    name: deploy-to-production
     runs-on: ubuntu-latest
     needs: docker-build-and-publish
     steps:
