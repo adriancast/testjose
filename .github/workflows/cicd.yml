@@ -59,4 +59,4 @@ jobs:
           deploy_path: /root/app
           stack_file_name: docker-compose.prod.yml
           keep_files: 5
-          args: web
+          args: --no-deps up -d web
