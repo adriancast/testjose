@@ -168,5 +168,10 @@ jobs:
           args: up -d
           pre_deployment_command_args: |
             version
-            docker volume create --name=testdeploy_uno
-            docker volume create --name=testdeploy_dos
+            docker volume create --name=testjose_postgres_data
+            docker volume create --name=static_volume
+            docker volume create --name=media_volume
+            docker volume create --name=certs
+            docker volume create --name=html
+            docker volume create --name=vhost
+            docker volume create --name=testjose_grafana
