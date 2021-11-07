@@ -148,3 +148,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 INSTALLED_APPS = ['admin_interface', 'colorfield'] + INSTALLED_APPS
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
+
+print('test')
+
