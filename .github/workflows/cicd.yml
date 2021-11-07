@@ -46,6 +46,8 @@ jobs:
     needs: docker-build-and-publish
     steps:
       -
+        uses: actions/checkout@master
+      -
         name: Login to DockerHub
         uses: docker/login-action@v1
         with:
