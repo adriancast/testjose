@@ -166,6 +166,6 @@ jobs:
           stack_file_name: docker-compose.prod.yml
           keep_files: 5
           args: up -d
-          build-args: |
+          pre_deployment_command_args: |
             docker volume create --name=testdeploy_uno
-            docker volume create --name=testdeploy_uno
+            docker volume create --name=testdeploy_dos
