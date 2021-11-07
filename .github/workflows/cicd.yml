@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+        uses: actions/checkout@master
+      -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       -
