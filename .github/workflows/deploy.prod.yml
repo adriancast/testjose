@@ -167,5 +167,6 @@ jobs:
           keep_files: 5
           args: up -d
           pre_deployment_command_args: |
+            version
             docker volume create --name=testdeploy_uno
             docker volume create --name=testdeploy_dos
