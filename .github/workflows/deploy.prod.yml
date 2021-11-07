@@ -1,4 +1,4 @@
-name: ci
+name: deploy-production
 
 on:
   push:
